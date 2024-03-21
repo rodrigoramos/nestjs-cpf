@@ -1,0 +1,28 @@
+{
+  "name": "nestjs-cpf",
+  "version": "1.0.0",
+  "description": "A package to handle Brazilian's Document CPF",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Ramos Silva",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.3.4",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "reflect-metadata": "^0.2.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  }
+}

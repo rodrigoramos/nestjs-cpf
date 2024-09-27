@@ -31,7 +31,7 @@ export function isCpfValid(cpf: Cpf): boolean {
  * Represents a CPF (Brazilian document)
  */
 export class Cpf {
-  private cpf: string;
+  private cpf: string = '';
 
   /**
    * Builds a new CPF object from a string or a number.
@@ -40,6 +40,7 @@ export class Cpf {
   constructor(cpf: string | number) {
     let cpfAsString = typeof cpf === 'number' ? cpf.toString() : cpf;
 
+    if (!cpf) return;
     cpfAsString = cpfAsString.padStart(11, '0');
 
     this.cpf = cpfAsString;
